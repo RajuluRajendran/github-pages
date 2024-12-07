@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<SCRIPT language=JavaScript>
+var message = "function disabled";
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+document.onmousedown = rtclickcheck;
+</SCRIPT>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Health | Webinar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="icon" href="https://ind.twinhealth.com/favicon-32x32.png" sizes="32x32" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/style.css">
+</head>
+
+
+
+  <script type="text/javascript">
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); 
+        });
+
+        // Disable specific keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            var forbiddenKeys = ["a", "s", "c", "x", "u"];
+            var isCtrl = e.ctrlKey || e.metaKey; // Check for Ctrl (Windows) or Command (Mac)
+
+            if (isCtrl && forbiddenKeys.includes(e.key.toLowerCase())) {
+                e.preventDefault(); // Disable the forbidden key combinations
+                alert('This action is disabled!'); // Optional: alert the user
+            }
+        });
+    </script>
+
+
+<body >
+
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/Twin-New-Logo-RGB.png" width="100" alt="logo" class="img-fluid">
+                </a>
+                <button class="btn btn-custom ms-auto" data-bs-toggle="modal" data-bs-target="#poupform">
+                    Book A Free Slot
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 my-auto">
+                        <h3 class="banner_head mb-md-4">Yes! <br> You Can Now Lead A Diabetes Free Life</h3>
+                        <h4 class="banner_text mb-md-4">Join the FREE webinar to understand the science of diabetes
+                            reversal</h4>
+                        <div class="d-flex align-items-center mb-md-4">
+                            <div class="btn-over hh ms-0" id="hour"></div><span>:</span>
+                            <div class="btn-over hh" id="minute"></div><span>:</span>
+                            <div class="btn-over hh" id="sec"></div>
+                        </div>
+                        <button class="btn btn-custom btn_banner" data-bs-toggle="modal" data-bs-target="#poupform">Book
+                            A Free Slot</button>
+                        <p class="mt-1">Last 
+                            <span class="fw-bold" id="countdown"></span> Free Seats Left</p>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-7 vid_div">
+                        <iframe width="100%" style="border-radius:16px;"
+                            src="https://www.youtube.com/embed/-f1Vjpo4Puo?si=MD8yq5xceIgd_NT3"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="webinar_sec">
+            <div class="container">
+                <h3 class="text-center sec_head">In this webinar, you will learn:</h3>
+                <div class="row g-3 g-md-5 mt-1">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-flex align-items-center">
+                            <img class="me-4" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/webinar_icon1.svg" alt="icon">
+                            <p class="mb-0">
+                                Why do you have diabetes in the first place?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-flex align-items-center">
+                            <img class="me-4" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/webinar_icon2.svg" alt="icon">
+                            <p class="mb-0">
+                                How can we fix the main problem causing your diabetes?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-flex align-items-center">
+                            <img class="me-4" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/webinar_icon3.svg" alt="icon">
+                            <p class="mb-0">
+                                Can we find a way for you to stop taking medicine or insulin?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-flex align-items-center">
+                            <img class="me-4" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/webinar_icon4.svg" alt="icon">
+                            <p class="mb-0">
+                                How do we figure out the best diet for you?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-flex align-items-center">
+                            <img class="me-4" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/webinar_icon5.svg" alt="icon">
+                            <p class="mb-0">
+                                Complications of medicines
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-flex align-items-center">
+                            <img class="me-4" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/webinar_icon5.svg" alt="icon">
+                            <p class="mb-0">
+                                Difference between type 1 and type 2 diabetes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="live_expert_sec">
+            <div class="container">
+                <h3 class="text-center">
+                    Get All Your Queries Answered <br> <span class="fw-bold">Live</span> With Our <span
+                        class="fw-bold">Expert Doctor</span>
+                </h3>
+            </div>
+        </section>
+        <section class="panel_sec">
+            <div class="container">
+                <h3 class="text-center sec_head">Our Panel</h3>
+                <div class="row justify-content-center g-3 g-md-4 mt-md-1">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-xl-flex align-items-start rounded-3 h-100">
+                            <img class="me-3" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/panel_img1.png" alt="icon">
+                            <div>
+                                <h6 class="mb-1">Dr Vivek Belde</h6>
+                                <p class="mb-0">
+                                    Sr. Diabetologist (15+ Years of Exp.) MBBS, DFM (UK) Clinical Research,
+                                    Immunology (USA)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-xl-flex align-items-start rounded-3 h-100">
+                            <img class="me-3" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/panel_img2.png" alt="icon">
+                            <div>
+                                <h6 class="mb-1">Dr Rohit warrier</h6>
+                                <p class="mb-0">
+                                    MBBS, MS(UTSW,US), DABRM (Diplomat & affiliate,American board of Regenerative
+                                    medicine,ABRM), Msc Diab (South Wales UK), ACCD (JNU/RSSDI), Scope cert. Obesity
+                                    specialist(UK)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-xl-flex align-items-start rounded-3 h-100">
+                            <img class="me-3" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/panel_img3.png" alt="icon">
+                            <div>
+                                <h6 class="mb-1">Dr Mamtha Prakash</h6>
+                                <p class="mb-0">
+                                    MBBS, Skilled with succinct medicine , diet and lifestyle Specialist with 4+years of
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-xl-flex align-items-start rounded-3 h-100">
+                            <img class="me-3" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/panel_img4.png" alt="icon">
+                            <div>
+                                <h6 class="mb-1">Dr. Tamil chatriyan</h6>
+                                <p class="mb-0">
+                                    MBBS, Clinical Research <br> Lifestyle consultant <br> 7+ years of experience
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card_div d-xl-flex align-items-start rounded-3 h-100">
+                            <img class="me-3" src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/panel_img5.png" alt="icon">
+                            <div>
+                                <h6 class="mb-1">Dr Dorphy</h6>
+                                <p class="mb-0">
+                                    MBBS MD, <br> 20+ Years of Experience <br> 15000+ Patients Treated
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-md-4 mt-3">
+                    <button class="btn btn-custom mx-auto" data-bs-toggle="modal" data-bs-target="#poupform">Book A Free
+                        Slot</button>
+                </div>
+            </div>
+        </section>
+        <section class="success_sec">
+            <div class="container">
+                <h3 class="text-center sec_head">21,000+ Successful Diabetes Reversal</h3>
+                <div class="owl-carousel owl-theme success_carousel mt-3 mt-md-4">
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“From 7.2, My HbA1c came down to 5.7”</h5>
+                                        <p class="mb-md-4">
+                                            “While joining Twin’s Diabetes Remission Program, From 7.2, My HbA1c
+                                            came
+                                            down
+                                            to
+                                            5.7 within One Year. <span>This has helped improve my health</span> & my
+                                            body’s nutrition
+                                            levels.
+                                            Thank you so much Twin Health!”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Alpana Mahapatra, 61, IITian.</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-droplet-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">HbA1c</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">7.5</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">5.7</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/success_img1.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“From 3 tablets a day, now I’m down to 1”</h5>
+                                        <p class="mb-md-4">
+                                            “I have had diabetes for the last 16 years. I joined Twin Health and the
+                                            progress I’ve made is incredible. Today my average HbA1c is 6 and <span>from
+                                                3
+                                                tablets a day, now I’m down to 1.</span>”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Donald Sequeira, 63.</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-capsule" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">Medicines</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">3</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/success_img2.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“I wanted to save myself from type-2 diabetes”</h5>
+                                        <p class="mb-md-4">
+                                            “I wanted to save myself from type-2 diabetes and that’s when I attended a
+                                            Twin Webinar. Thanks to their Diabetes Remission Program, <span>now my HbA1c
+                                                level
+                                                is less than 5.8</span> and I’m not on medications anymore.”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Srinivasan, diagnosed with diabetes in 2018</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-capsule" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">Medicines</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">2</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets//success_img3.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“My HbA1c levels dropped from 9.1 to 6.2”</h5>
+                                        <p class="mb-md-4">
+                                            “I was in the Diabetes Remission Program for the past 1 year and <span>my
+                                                HbA1c
+                                                levels dropped from 9.1 to 6.2</span> with a balanced & nutrition diet
+                                            along with
+                                            other everyday activities suggested by the team.”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Divya,34</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-droplet-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">HbA1c</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">9.1</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">6.2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/success_img4.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“My HbA1c was 11 & now it’s at ~7.”</h5>
+                                        <p class="mb-md-4">
+                                            “I’ve been in the Twin Diabetes Remission Program for the last 1 year and
+                                            it’s been very easy to improve my health. When I joined, <span>My HbA1c was
+                                                11 &
+                                                now it’s at ~7.</span>”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Smidha,43.</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-droplet-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">HbA1c</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">11</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">~7</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/success_img5.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“Now I’m not taking any tablets”</h5>
+                                        <p class="mb-md-4">
+                                            “One year ago my brother advised me to join the Twin Health Diabetes
+                                            Remission Program. Now I’m not taking any tablets and <span>my sugar level,
+                                                every
+                                                day, is around 120.</span>”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Usha, diagnosed with diabetes in 2015</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-droplet-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">Sugar mg/dl</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">350</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">~120</div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-capsule" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">Medicines</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">2</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/success_img6.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="success_div">
+                            <div class="row success_content_wrap d-flex justify-content-between position-relative">
+                                <div class="col-lg-8 success_col">
+                                    <div class="me-2 me-xl-5">
+                                        <h5>“In 2 weeks, I was free of all my diabetes medications.”</h5>
+                                        <p class="mb-md-4">
+                                            “At the time of joining the Twin <span>Diabetes Reversal Program</span>, my
+                                            sugar level
+                                            was 280 mg/dl and HbA1c was 7.4%. Within 5 days my sugar levels came down to
+                                            70 mg and in 2 weeks, I was free of all my diabetes medications.”
+                                        </p>
+                                    </div>
+                                    <div class="success_bottom position-absolute bottom-0">
+                                        <p class="mb-md-2 mb-2">Rangarajan, 63</p>
+                                        <div class="start_main_div">
+                                            <div
+                                                class="start_div d-flex justify-content-between align-items-center pb-1">
+                                                <p class="mb-0 fw-bold">Start of the Program</p>
+                                                <p class="mb-0 fw-bold">Within 1 Year</p>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-droplet-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">Sugar mg/dl</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">280</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">70</div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="start_div_inner d-flex justify-content-between align-items-center pt-2">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        fill="#FF4B05" class="me-2 bi bi-capsule" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429z" />
+                                                    </svg>
+                                                    <p class="mb-0 me-3">Medicines</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div class="cal_div_white">2</div>
+                                                    <div class="line position-relative w-100"></div>
+                                                    <div class="cal_div_green me-md-4">0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="success_img col-lg-4 position-relative">
+                                    <img src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/success_img7.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="reverse_sec">
+            <div class="container">
+                <h3 class="text-center sec_head">We Reverse, Others Manage</h3>
+                <p class="text-center w-75 mx-auto mt-md-3 mb-md-4">
+                    Twin is the first in the world to offer precision treatment to reverse diabetes with the help of FDA
+                    approved sensors and AI/ML. Its comprehensive treatment includes precision nutrition, medicine,
+                    sleep and activity. 100% safe, simple and natural.
+                </p>
+                <svg class="d-none d-md-block" id="Group_1257" data-name="Group 1257" xmlns="http://www.w3.org/2000/svg"
+                    width="100%" viewBox="0 0 1640 629.03">
+                    <path id="Rectangle_616" data-name="Rectangle 616"
+                        d="M28,0H414a0,0,0,0,1,0,0V557.03a0,0,0,0,1,0,0H28a28,28,0,0,1-28-28V28A28,28,0,0,1,28,0Z"
+                        transform="translate(0 72)" fill="#dedede" opacity="0.285" />
+                    <path id="Rectangle_609" data-name="Rectangle 609"
+                        d="M28,0H613a0,0,0,0,1,0,0V629.03a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V28A28,28,0,0,1,28,0Z"
+                        transform="translate(414)" fill="#00a651" opacity="0.1" />
+                    <path id="Rectangle_614" data-name="Rectangle 614"
+                        d="M28,0H613a0,0,0,0,1,0,0V72a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V28A28,28,0,0,1,28,0Z"
+                        transform="translate(414)" fill="#00a651" />
+                    <path id="Rectangle_615" data-name="Rectangle 615"
+                        d="M0,0H585a28,28,0,0,1,28,28V601.03a28,28,0,0,1-28,28H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"
+                        transform="translate(1027)" fill="#e3a5a5" opacity="0.446" />
+                    <path id="Rectangle_610" data-name="Rectangle 610"
+                        d="M0,0H585a28,28,0,0,1,28,28V72a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"
+                        transform="translate(1027)" fill="#e3a5a5" />
+                    <text id="Twin_Health" data-name="Twin Health" transform="translate(559 47)" fill="#fff"
+                        font-size="28" font-family="Heebo-Medium, Heebo" font-weight="500">
+                        <tspan x="-74" y="0">Twin Health</tspan>
+                    </text>
+                    <text id="Other_Treatments" data-name="Other Treatments" transform="translate(1207 47)" fill="#fff"
+                        font-size="28" font-family="Heebo-Medium, Heebo" font-weight="500">
+                        <tspan x="-109" y="0">Other Treatments</tspan>
+                    </text>
+                    <text id="Treatment_Goal" data-name="Treatment Goal" transform="translate(52 121.842)"
+                        font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Treatment Goal</tspan>
+                    </text>
+                    <text id="Diabetes_Management" data-name="Diabetes Management" transform="translate(1097 121.842)"
+                        fill="#121135" font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Diabetes Management</tspan>
+                    </text>
+                    <text id="Diabetes_Reversal" data-name="Diabetes Reversal" transform="translate(484 121.842)"
+                        fill="#00a651" font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Diabetes Reversal</tspan>
+                    </text>
+                    <text id="Treatment_Philosophy" data-name="Treatment Philosophy" transform="translate(52 211.695)"
+                        font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Treatment Philosophy</tspan>
+                    </text>
+                    <text id="Generic_One-size-fits-all._Treats_symptoms"
+                        data-name="Generic, One-size-fits-all. Treats symptoms" transform="translate(1097 211.695)"
+                        fill="#121135" font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Generic, One-size-fits-all. Treats symptoms</tspan>
+                    </text>
+                    <text id="Personalised_Precise_Scientific_Tech-driven._Treats_root_cause" data-name="Personalised, Precise, Scientific,
+                  Tech-driven. Treats root cause" transform="translate(484 193.707)" fill="#00a651" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Personalised, Precise, Scientific,</tspan>
+                        <tspan x="0" y="35">Tech-driven. Treats root cause</tspan>
+                    </text>
+                    <text id="Treatment_Method" data-name="Treatment Method" transform="translate(52 301.548)"
+                        font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Treatment Method</tspan>
+                    </text>
+                    <text id="Limited_Narrow_focus_on_select_areas" data-name="Limited, Narrow focus on select areas"
+                        transform="translate(1097 301.548)" fill="#121135" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Limited, Narrow focus on select areas</tspan>
+                    </text>
+                    <text id="Comprehensive_-_nutrition_medicine_sleep_activity_lifestyle" data-name="Comprehensive - nutrition, medicine,
+                  sleep, activity &amp; lifestyle" transform="translate(484 283.551)" fill="#00a651" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Comprehensive - nutrition, medicine,</tspan>
+                        <tspan x="0" y="35">sleep, activity &amp; lifestyle</tspan>
+                    </text>
+                    <text id="Overall_Mood_Energy" data-name="Overall Mood &amp; Energy"
+                        transform="translate(52 481.255)" font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Overall Mood &amp; Energy</tspan>
+                    </text>
+                    <text id="Deteriorates" transform="translate(1097 481.255)" fill="#121135" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Deteriorates</tspan>
+                    </text>
+                    <text id="Improves" transform="translate(484 481.255)" fill="#00a651" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Improves</tspan>
+                    </text>
+                    <text id="Side_Effects" data-name="Side Effects" transform="translate(52 391.402)" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Side Effects</tspan>
+                    </text>
+                    <text id="Possible_internal_organ_damage_over_a_period_of_time" data-name="Possible internal organ damage over
+                  a period of time" transform="translate(1097 373.395)" fill="#121135" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Possible internal organ damage over</tspan>
+                        <tspan x="0" y="35">a period of time</tspan>
+                    </text>
+                    <text id="Nil" transform="translate(484 391.402)" fill="#00a651" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Nil</tspan>
+                    </text>
+                    <text id="Other_Chronic_Diseases" data-name="Other Chronic Diseases"
+                        transform="translate(52 571.03)" font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Other Chronic Diseases</tspan>
+                    </text>
+                    <text id="Doesn_t_treat_them" data-name="Doesn’t treat them" transform="translate(1097 571.03)"
+                        fill="#121135" font-size="24" font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Doesn’t treat them</tspan>
+                    </text>
+                    <text id="Treats_other_chronic_diseases_like_High_BP_Cholesterol_Obesity" data-name="Treats other chronic diseases like High BP,
+                  Cholesterol, Obesity" transform="translate(484 553.03)" fill="#00a651" font-size="24"
+                        font-family="Heebo-Regular, Heebo">
+                        <tspan x="0" y="0">Treats other chronic diseases like High BP,</tspan>
+                        <tspan x="0" y="35">Cholesterol, Obesity</tspan>
+                    </text>
+                    <g id="Group_1232" data-name="Group 1232" transform="translate(0 158.931)" opacity="0.149">
+                        <line id="Line_2" data-name="Line 2" x2="1640" fill="none" stroke="#707070" stroke-width="1" />
+                        <line id="Line_3" data-name="Line 3" x2="1640" transform="translate(0 89.5)" fill="none"
+                            stroke="#707070" stroke-width="1" />
+                        <line id="Line_4" data-name="Line 4" x2="1640" transform="translate(0 179)" fill="none"
+                            stroke="#707070" stroke-width="1" />
+                        <line id="Line_5" data-name="Line 5" x2="1640" transform="translate(0 268.5)" fill="none"
+                            stroke="#707070" stroke-width="1" />
+                        <line id="Line_6" data-name="Line 6" x2="1640" transform="translate(0 358)" fill="none"
+                            stroke="#707070" stroke-width="1" />
+                    </g>
+                </svg>
+                <!-- table mb 1 -->
+                <svg class="mb-3 d-md-none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1027 629.03">
+                    <g id="Group_1416" data-name="Group 1416" transform="translate(-5292 -4158.971)">
+                        <path id="Rectangle_616" data-name="Rectangle 616"
+                            d="M28,0H414a0,0,0,0,1,0,0V557.03a0,0,0,0,1,0,0H28a28,28,0,0,1-28-28V28A28,28,0,0,1,28,0Z"
+                            transform="translate(5292 4230.971)" fill="#dedede" opacity="0.285" />
+                        <path id="Rectangle_609" data-name="Rectangle 609"
+                            d="M28,0H585a28,28,0,0,1,28,28V629.03a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V28A28,28,0,0,1,28,0Z"
+                            transform="translate(5706 4158.971)" fill="#00a651" opacity="0.1" />
+                        <path id="Rectangle_614" data-name="Rectangle 614"
+                            d="M28,0H585a28,28,0,0,1,28,28V72a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V28A28,28,0,0,1,28,0Z"
+                            transform="translate(5706 4158.971)" fill="#00a651" />
+                        <text id="Twin_Health" data-name="Twin Health" transform="translate(5851 4205.971)" fill="#fff"
+                            font-size="28" font-family="Heebo-Medium, Heebo" font-weight="500">
+                            <tspan x="-74.525" y="0">Twin Health</tspan>
+                        </text>
+                        <text id="Treatment_Goal" data-name="Treatment Goal" transform="translate(5344 4280.813)"
+                            font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treatment Goal</tspan>
+                        </text>
+                        <text id="Diabetes_Reversal" data-name="Diabetes Reversal" transform="translate(5776 4280.813)"
+                            fill="#00a651" font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Diabetes Reversal</tspan>
+                        </text>
+                        <text id="Treatment_Philosophy" data-name="Treatment Philosophy"
+                            transform="translate(5344 4370.666)" font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treatment Philosophy</tspan>
+                        </text>
+                        <text id="Personalised_Precise_Scientific_Tech-driven._Treats_root_cause" data-name="Personalised, Precise, Scientific,
+                    Tech-driven. Treats root cause" transform="translate(5776 4352.678)" fill="#00a651" font-size="28"
+                            font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Personalised, Precise, Scientific,</tspan>
+                            <tspan x="0" y="35">Tech-driven. Treats root cause</tspan>
+                        </text>
+                        <text id="Treatment_Method" data-name="Treatment Method" transform="translate(5344 4460.519)"
+                            font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treatment Method</tspan>
+                        </text>
+                        <text id="Comprehensive_-_nutrition_medicine_sleep_activity_lifestyle" data-name="Comprehensive - nutrition, medicine,
+                    sleep, activity &amp; lifestyle" transform="translate(5776 4442.521)" fill="#00a651" font-size="28"
+                            font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Comprehensive - nutrition, medicine,</tspan>
+                            <tspan x="0" y="35">sleep, activity &amp; lifestyle</tspan>
+                        </text>
+                        <text id="Overall_Mood_Energy" data-name="Overall Mood &amp; Energy"
+                            transform="translate(5344 4640.225)" font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Overall Mood &amp; Energy</tspan>
+                        </text>
+                        <text id="Improves" transform="translate(5776 4640.225)" fill="#00a651" font-size="28"
+                            font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Improves</tspan>
+                        </text>
+                        <text id="Side_Effects" data-name="Side Effects" transform="translate(5344 4550.372)"
+                            font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Side Effects</tspan>
+                        </text>
+                        <text id="Nil" transform="translate(5776 4550.372)" fill="#00a651" font-size="28"
+                            font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Nil</tspan>
+                        </text>
+                        <text id="Other_Chronic_Diseases" data-name="Other Chronic Diseases"
+                            transform="translate(5344 4730)" font-size="28" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Other Chronic Diseases</tspan>
+                        </text>
+                        <text id="Treats_other_chronic_diseases_like_High_BP_Cholesterol_Obesity" data-name="Treats other chronic diseases like High BP,
+                    Cholesterol, Obesity" transform="translate(5776 4712)" fill="#00a651" font-size="28"
+                            font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treats other chronic diseases like High BP,</tspan>
+                            <tspan x="0" y="35">Cholesterol, Obesity</tspan>
+                        </text>
+                        <g id="Group_1232" data-name="Group 1232" transform="translate(5292 4317.901)" opacity="0.149">
+                            <line id="Line_2" data-name="Line 2" x2="1027" fill="none" stroke="#707070"
+                                stroke-width="1" />
+                            <line id="Line_3" data-name="Line 3" x2="1027" transform="translate(0 89.5)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                            <line id="Line_4" data-name="Line 4" x2="1027" transform="translate(0 179)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                            <line id="Line_5" data-name="Line 5" x2="1027" transform="translate(0 268.5)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                            <line id="Line_6" data-name="Line 6" x2="1027" transform="translate(0 358)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                        </g>
+                    </g>
+                </svg>
+                <!-- table mb 2 -->
+                <svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1027 629.03">
+                    <g id="Group_1415" data-name="Group 1415" transform="translate(-5292 -4856.971)">
+                        <path id="Rectangle_672" data-name="Rectangle 672"
+                            d="M28,0H414a0,0,0,0,1,0,0V557.03a0,0,0,0,1,0,0H28a28,28,0,0,1-28-28V28A28,28,0,0,1,28,0Z"
+                            transform="translate(5292 4928.971)" fill="#dedede" opacity="0.285" />
+                        <text id="Treatment_Goal" data-name="Treatment Goal" transform="translate(5344 4978.813)"
+                            font-size="24" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treatment Goal</tspan>
+                        </text>
+                        <text id="Treatment_Philosophy" data-name="Treatment Philosophy"
+                            transform="translate(5344 5068.666)" font-size="24" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treatment Philosophy</tspan>
+                        </text>
+                        <text id="Treatment_Method" data-name="Treatment Method" transform="translate(5344 5158.519)"
+                            font-size="24" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Treatment Method</tspan>
+                        </text>
+                        <text id="Overall_Mood_Energy" data-name="Overall Mood &amp; Energy"
+                            transform="translate(5344 5338.225)" font-size="24" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Overall Mood &amp; Energy</tspan>
+                        </text>
+                        <text id="Side_Effects" data-name="Side Effects" transform="translate(5344 5248.372)"
+                            font-size="24" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Side Effects</tspan>
+                        </text>
+                        <text id="Other_Chronic_Diseases" data-name="Other Chronic Diseases"
+                            transform="translate(5344 5428)" font-size="24" font-family="Heebo-Regular, Heebo">
+                            <tspan x="0" y="0">Other Chronic Diseases</tspan>
+                        </text>
+                        <g id="Group_1414" data-name="Group 1414" transform="translate(5292 5015.901)" opacity="0.149">
+                            <line id="Line_2" data-name="Line 2" x2="1027" fill="none" stroke="#707070"
+                                stroke-width="1" />
+                            <line id="Line_3" data-name="Line 3" x2="1027" transform="translate(0 89.5)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                            <line id="Line_4" data-name="Line 4" x2="1027" transform="translate(0 179)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                            <line id="Line_5" data-name="Line 5" x2="1027" transform="translate(0 268.5)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                            <line id="Line_6" data-name="Line 6" x2="1027" transform="translate(0 358)" fill="none"
+                                stroke="#707070" stroke-width="1" />
+                        </g>
+                        <g id="Group_1413" data-name="Group 1413" transform="translate(-621 -96)">
+                            <path id="Rectangle_670" data-name="Rectangle 670"
+                                d="M28,0H585a28,28,0,0,1,28,28V629.03a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V28A28,28,0,0,1,28,0Z"
+                                transform="translate(6327 4952.971)" fill="#e3a5a5" opacity="0.446" />
+                            <path id="Rectangle_671" data-name="Rectangle 671"
+                                d="M28,0H585a28,28,0,0,1,28,28V72a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V28A28,28,0,0,1,28,0Z"
+                                transform="translate(6327 4952.971)" fill="#e3a5a5" />
+                            <text id="Other_Treatments" data-name="Other Treatments"
+                                transform="translate(6507 4999.971)" fill="#fff" font-size="28"
+                                font-family="Heebo-Medium, Heebo" font-weight="500">
+                                <tspan x="-109.874" y="0">Other Treatments</tspan>
+                            </text>
+                            <text id="Diabetes_Management" data-name="Diabetes Management"
+                                transform="translate(6397 5074.813)" fill="#121135" font-size="24"
+                                font-family="Heebo-Regular, Heebo">
+                                <tspan x="0" y="0">Diabetes Management</tspan>
+                            </text>
+                            <text id="Generic_One-size-fits-all._Treats_symptoms"
+                                data-name="Generic, One-size-fits-all. Treats symptoms"
+                                transform="translate(6397 5164.666)" fill="#121135" font-size="24"
+                                font-family="Heebo-Regular, Heebo">
+                                <tspan x="0" y="0">Generic, One-size-fits-all. Treats symptoms</tspan>
+                            </text>
+                            <text id="Limited_Narrow_focus_on_select_areas"
+                                data-name="Limited, Narrow focus on select areas" transform="translate(6397 5254.519)"
+                                fill="#121135" font-size="24" font-family="Heebo-Regular, Heebo">
+                                <tspan x="0" y="0">Limited, Narrow focus on select areas</tspan>
+                            </text>
+                            <text id="Deteriorates" transform="translate(6397 5434.225)" fill="#121135" font-size="24"
+                                font-family="Heebo-Regular, Heebo">
+                                <tspan x="0" y="0">Deteriorates</tspan>
+                            </text>
+                            <text id="Possible_internal_organ_damage_over_a_period_of_time" data-name="Possible internal organ damage over
+                      a period of time" transform="translate(6397 5326.366)" fill="#121135" font-size="24"
+                                font-family="Heebo-Regular, Heebo">
+                                <tspan x="0" y="0">Possible internal organ damage over</tspan>
+                                <tspan x="0" y="35">a period of time</tspan>
+                            </text>
+                            <text id="Doesn_t_treat_them" data-name="Doesn’t treat them"
+                                transform="translate(6397 5524)" fill="#121135" font-size="24"
+                                font-family="Heebo-Regular, Heebo">
+                                <tspan x="0" y="0">Doesn’t treat them</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </section>
+        <section class="understand_sec">
+            <div class="container">
+                <div class="understand_div">
+                    <div class="row gx-md-5 gy-3 gy-md-0">
+                        <div class="col-lg-5 col-md-12 my-auto">
+                            <h3 class="mb-0 sec_head">We Understand Your Body Metabolism Better Than Anyone</h3>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                            <p>
+                                Damaged metabolism is the root cause of diabetes and can severely hamper your regular
+                                life. Twin Health’s webinar will help you understand your body’s metabolism and guide
+                                you on steps to take for a diabetes-free life!
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center understand_sec">
+                                <div class="d-flex align-items-center mb-md-4">
+                                    <div class="btn-over hh ms-0" id="hourU"></div><span>:</span>
+                                    <div class="btn-over hh" id="minuteU"></div><span>:</span>
+                                    <div class="btn-over hh" id="secU"></div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-custom" data-bs-toggle="modal"
+                                        data-bs-target="#poupform">Book A Free Slot</button>
+                                    <p class="mt-1">Last <span class="fw-bold" id="countdown2"></span> Free Seats Left</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_sec text-center">
+            <div class="container">
+                <h3 class="sec_head">About Twin Health</h3>
+                <p class="mt-md-4 mx-auto">
+                    Founded by Dr Jahangir Mohammed, Twin Health, Inc. pioneered Whole Body Digital Twin™, a precision
+                    health platform, to help members safely achieve diabetes remission of type 2 diabetes and other
+                    chronic diseases.
+                </p>
+                <p class="mx-auto">
+                    With artificial intelligence and Internet of things technologies, the Twin Health Platform offers a
+                    highly technical yet highly personalized experience for members as physicians and coaches guide them
+                    to repair the root cause of disease. Twin Health is present in India and the US and comprises a team
+                    of 500+ passionate people across nations and is published in over 20 peer-reviewed journals and
+                    research papers.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">
+                Copyright © . All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- sticky mb btn -->
+    <div class="sticky-bottom mx-1 d-md-none">
+        <button class="btn my-1 w-100 btn-custom ms-auto" fdprocessedid="3kvw2h" data-bs-toggle="modal"
+            data-bs-target="#poupform">
+            Book A Free Slot
+        </button>
+    </div>
+
+
+    <!-- Model Popup Form-->
+    <div class="modal fade" id="poupform" tabindex="-1" aria-labelledby="poupformmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                    <div class="form-bg d-flex justify-content-center align-items-center">
+                        <div class="">
+                            <h4>Fill out the form below, to register now for the webinar</h4>
+                            <form action="" id="popupform" method="POST" onsubmit="submitbookButton.disabled = true; return true;">
+                                <div class="s1" id="p1">
+                                
+                                    <input type='hidden' name='utm_source' value="" id="utm_source" />
+                                    <input type='hidden' name='utm_campaign' value="" id="utm_campaign" />
+                                    <input type='hidden' name='utm_medium' value="" id="utm_medium" />
+                                    <input type='hidden' name='utm_keywords' value="" id="utm_keywords" />
+                                    <input type='hidden' name='utm_content' value="" id="utm_content" />
+                                    <input type='hidden' name='gclid' id="gclid" value=""  />
+                                    <input type="hidden" name="verifyId" id="verifyId" value="">
+                                    <input type="hidden" name="brochure" id="brochure" value="no">
+                                    <input type="hidden" name="deviceinfo" id="deviceinfo" value="" />
+                                    <input type="hidden" name="osinfo" id="osinfo" value="" />
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="name" class="form-control"
+                                            placeholder="Name*" pattern="[a-zA-Z ]+" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" id="phone" class="form-control"
+                                            placeholder="WhatsApp Number*" pattern="[6789][0-9]{9}" required />
+                                    </div>
+                                                                      
+                                   
+                               <div class="form-group">
+                                        <select name="language" id="language" class="form-select form-control"
+                                            required>
+                                            <option value="">Preferred webinar time slot*</option>   
+<option value="23rd Sep 6:30PM Monday">23rd Sep 6:30PM Monday</option>
+<option value="25th Sep 6:30PM Wednesday">25th Sep 6:30PM Wednesday</option>
+<option value="27th Sep 6:30PM Friday">27th Sep 6:30PM Friday</option>
+<option value="28th Sep 6:30PM Saturday">28th Sep 6:30PM Saturday</option>
+                                             </select>
+                                    </div>
+
+
+                                    <div class="text-center">
+
+                                        <button class="btn btn-custom w-100" id="sub_frm" type="submit" name="submitpopupButton">
+                                            Book A Free Slot
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="s2" id="p2" style="display: none;">
+                                    <p class="s2Msg" id="s2Msg_p"></p>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-7 pe-md-0">
+                                                <input type="number" name="otp" id="otp_p" class="form-control m-0"
+                                                    placeholder="Enter OTP" />
+                                            </div>
+                                            <div class="col-md-5">
+                                                <button class="btn btn-custom2 h-100" id="verifyOTP_p" type="button">
+                                                    Verify
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Didn't get the OTP, <button class="resend" id="resend_p">Resend</button></p>
+
+                                    <div class="form-group mt-5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-custom2" id="goback_p" type="button">
+                                                    Back
+                                                </button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-custom2 disabled" disabled type="submit" name="submitbookButton">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	
+	
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/LandingPageAssets/jquerycountup.js"></script>
+	
+	<script src="https://f2.leadsquaredcdn.com/t/twins/content/common/documents/webinarformandwhatsappquerynov2024.js"></script>
+	
+    <script>
+    $('.count').countUp();
+    //success_carousel
+        $('.success_carousel').owlCarousel({
+            margin: 20,
+            nav: true,
+            dots: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    // stagePadding: 0,
+                    margin: 0
+                },
+                767: {
+                    items: 1,
+                    stagePadding: 0,
+                },
+                1200: {
+                    items: 1,
+                    stagePadding: 100,
+                }
+            }
+        });
+    </script>
+    <script> //timer new
+        var spd = 1000;
+        var spdVal = 1;
+        var initialTime = 47 * 3600 + 16 * 60 + 59;
+        var cntDown = initialTime * spdVal;
+
+        function updateTimer() {
+            var hr, mn, sc;
+            cntDown--;
+
+            if (cntDown < 0) { return false; }
+
+            hr = Math.floor((cntDown / spdVal) / 3600);
+            hr = (hr < 10 ? '0' + hr : hr);
+            mn = Math.floor(((cntDown / spdVal) % 3600) / 60);
+            mn = (mn < 10 ? '0' + mn : mn);
+            sc = Math.floor((cntDown / spdVal) % 60);
+            sc = (sc < 10 ? '0' + sc : sc);
+
+            document.getElementById('hour').innerHTML = hr + "<br><span>Hours</span>";
+            document.getElementById('minute').innerHTML = mn + "<br><span>Minutes</span>";
+            document.getElementById('sec').innerHTML = sc + "<br><span>Seconds</span>";
+
+            document.getElementById('hourU').innerHTML = hr + "<br><span>Hours</span>";
+            document.getElementById('minuteU').innerHTML = mn + "<br><span>Minutes</span>";
+            document.getElementById('secU').innerHTML = sc + "<br><span>Seconds</span>";
+        }
+
+        setInterval(updateTimer, spd);
+    </script>
+    <script> //count down - banner section
+        function startCountdown() {
+        var count = 27; // Starting value
+        var endValue = 13; // Ending value
+        var interval = 8000; // Interval in milliseconds (8 seconds)
+
+        document.getElementById('countdown').innerText = count;
+
+        function updateCountdown() {
+            count--;
+
+            document.getElementById('countdown').innerText = count;
+
+            if (count <= endValue) {
+            clearInterval(countdownInterval);
+            }
+        }
+
+        var countdownInterval = setInterval(updateCountdown, interval);
+        }
+
+        setTimeout(startCountdown, 1000); // 1000 milliseconds = 1 second
+    </script>
+    <script> //count down - understand section 
+        function startCountdown() {
+        var count = 27; // Starting value
+        var endValue = 13; // Ending value
+        var interval = 8000; // Interval in milliseconds (8 seconds)
+
+        document.getElementById('countdown2').innerText = count;
+
+        function updateCountdown() {
+            count--;
+
+            document.getElementById('countdown2').innerText = count;
+
+            if (count <= endValue) {
+            clearInterval(countdownInterval);
+            }
+        }
+
+        var countdownInterval = setInterval(updateCountdown, interval);
+        }
+
+        setTimeout(startCountdown, 1000); // 1000 milliseconds = 1 second
+    </script>
+
+
+<!-- JavaScript -->
+<script>
+    function getUtms() {
+        let url = window.location.href;
+        let params = {};
+        let parser = document.createElement('a');
+        parser.href = url;
+        let query = parser.search.substring(1);
+        let vars = query.split('&');
+        
+        for (let i = 0; i < vars.length; i++) {
+            let pair = vars[i].split('=');
+            params[pair[0]] = decodeURIComponent(pair[1]);
+        }
+
+        for (param in params) {
+            let formField = document.getElementById(param);
+            if (params[param] !== undefined && formField !== null) {
+                formField.value = params[param];
+            }
+        }
+    }
+
+    // Call getUtms when the page loads
+    window.onload = getUtms;
+
+    // Rest of your code...
+</script>
+
+
+</body>
+
+</html>
